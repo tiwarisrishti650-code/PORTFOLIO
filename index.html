@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Srishti Tiwari | Portfolio</title>
+<meta name="description" content="Personal portfolio of Srishti Tiwari, web developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header classs="site-header">
+  <a href="#home" class="logo">Srishti Tiwari</a>
+  <button id="menu-btn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="nav">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-btn" aria-label="Switch theme">Dark mode</button>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <p class="hero-kicker">Hi, I'm</p>
+    <h1>Srishti Tiwari</h1>
+    <p class="hero-role">I build <span id="role">websites</span>.</p>
+    <p class="hero-text">Student developer learning HTML, CSS and JavaScript. I like turning ideas into clean, working pages.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#projects">See my projects</a>
+      <a class="btn btn-ghost" href="#contact">Contact me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>I'm Srishti Tiwari, an aspiring software developer passionate about technology, coding, and creating innovative digital solutions. I enjoy exploring new tools, learning new skills, and transforming ideas into functional and creative projects.</p>
+    <p>Languages: C, HTML, CSS, JavaScript
+Core Skills: Problem Solving, Data Structures, Programming Fundamentals
+Currently Learning: Web Development, JavaScript, Software Development
+Interests: UI Design, Building Projects, Exploring New Technologies</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li><strong>BTech(DS+AI)</strong><span>SRMU</span></li>
+      <li><strong>Class 12 / Intermediate</strong><span>P.S.T Memorial University, 2025</span></li>
+      <li><strong>Class 10</strong><span>P.S.T Memorial University, 2023/span></li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill"><span>HTML</span><div class="bar"><i data-level="90"></i></div></div>
+      <div class="skill"><span>CSS</span><div class="bar"><i data-level="80"></i></div></div>
+      <div class="skill"><span>JavaScript</span><div class="bar"><i data-level="65"></i></div></div>
+      <div class="skill"><span>Git and GitHub</span><div class="bar"><i data-level="60"></i></div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="web">Web pages</button>
+      <button class="filter" data-filter="js">JavaScript</button>
+    </div>
+    <div class="grid">
+      <article class="card" data-type="web">
+        <h3>TransformX AI</h3>
+        <p>TransformX AI converts one source of content into multiple communication outputs.</p>
+        <p>Our tagline is : One source, Multiple Communication Outputs</p>
+        <a href="#" target="_blank" rel="noopener"></a>
+      </article>
+      <article class="card" data-type="js">
+        <h3>House_Price_Prediction</h3>
+        <p>A Machine Learning-based web application that predicts estimated house prices using property details like location, area, BHK, and bathrooms.</p>
+        <a href="" target="_blank" rel="noopener">In Development</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form" novalidate>
+      <label>Name <input type="text" id="name" required></label>
+      <label>Email <input type="email" id="email" required></label>
+      <label>Message <textarea id="message" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+      <p id="form-msg" role="status"></p>
+    </form>
+    <p class="links">
+      <a href="mailto:tiwarisrishti650@gmail.com">tiwarisrishti650@gmail.com</a>
+      <a href="https://github.com/tiwarisrishti650-code" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/srishti-tiwari-8444693a0/" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </section>
+  <footer>
+    <span id ="year"></span> /Designed by Srishti Tiwari
+  </footer>
+<footer>© <span id="year"></span> Srishti Tiwari</footer>
+<script src="script.js"></script>
+</body>
+</html>
